@@ -88,7 +88,7 @@ for t in range(1,33): # 32 Sekunden Dauer
 Die Hochfahrt dauert 32 Sekunden, die ersten 6s beschleunigt der Aufzug mit 1.2 m/s², die letzen 6s bremst er mit gleicher Beschleunigung ab.
 
 Die Simulation berechnet für jede Sekunde wie oft die Uhren einen Impuls vom Pendel erhalten haben. Dabei werden auch Dezimalzahlen akzeptiert, da sie sich im Laufe der Simulation aufaddieren.\
-Um das zu berechnen wird bei jeden durchlauf der letzte Wert für die Anzahl der Impulse mit der aktuellen Frequenz mal 2 addiert. Mal 2 weil sie pro Schwingung den Impuls 2 mal auslöst.
+Um das zu berechnen wird bei jedem Durchlauf der letzte Wert für die Anzahl der Impulse mit der aktuellen Frequenz mal 2 addiert. Mal 2 weil sie pro Schwingung den Impuls 2 mal auslöst.
 
 
 ```python
@@ -120,7 +120,7 @@ print(round(c_static[-1],4), round(c_mov[-1],4), round(c_mov[-1]-c_static[-1],4)
 
 Nach der Fahrt zeigt die ruhende Uhr **31.9994s** also fast genau die wirklich vergangenen **32s**
 
-Die bewegte Uhr Zeigt **31.9768s** an also eine Abweichung von **-0.0226s. Sie geht also nach.**
+Die bewegte Uhr zeigt **31.9768s** an also eine Abweichung von **-0.0226s. Sie geht also nach.**
 
 
 ```python
@@ -180,10 +180,10 @@ print(round(max(d_c_percent),4), round(d_c_percent[-1],4))
     5.9398 -0.0705
 
 
-Dieser Graph zeigt die Abweichung der Gesamtzeit in Proznet. Sie ist mit **5.9398%** während dem Anfahren am größten.\
+Dieser Graph zeigt die Abweichung der Gesamtzeit in Prozent. Sie ist mit **5.9398%** während dem Anfahren am größten.\
 Nach der Fahrt beträgt sie **nur noch -0.0705%**
 
-### 32s Aufenthalt
+### 32 Sekunden Aufenthalt
 
 
 ```python
@@ -200,7 +200,7 @@ for t in range(33,65): #die nächsten 32 Sekunden der Simulation
 
 ```
 
-Nun wird ein **32s langer Aufenthalt** oben Simuliert. Dieser hat hauptsächlich Einfluss auf die relative Abeweichung der Gesamtzeit. Die Abweichung der Uhren nach den ankommen oben von **-0.0226s bleibt gleich**
+Nun wird ein **32s langer Aufenthalt** oben Simuliert. Dieser hat hauptsächlich Einfluss auf die relative Abeweichung der Gesamtzeit. Die Abweichung der Uhren nach dem Ankommen oben von **-0.0226s bleibt gleich**
 
 ### Abfahrt
 
