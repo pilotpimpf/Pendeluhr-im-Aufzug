@@ -85,7 +85,7 @@ for t in range(1,33): # 32 Sekunden Dauer
 
 ```
 
-Die Hochfahrt dauert 32 Sekunden, die ersten 6s beschleunigt der Aufzug mit $1.2 \frac{m}{s}$, die letzen 6s bremst er mit gleicher Beschleunigung ab.
+Die Hochfahrt dauert 32 Sekunden, die ersten 6s beschleunigt der Aufzug mit 1.2 m/s², die letzen 6s bremst er mit gleicher Beschleunigung ab.
 
 Die Simulation berechnet für jede Sekunde wie oft die Uhren einen Impuls vom Pendel erhalten haben. Dabei werden auch Dezimalzahlen akzeptiert, da sie sich im Laufe der Simulation aufaddieren.\
 Um das zu berechnen wird bei jeden durchlauf der letzte Wert für die Anzahl der Impulse mit der aktuellen Frequenz mal 2 addiert. Mal 2 weil sie pro Schwingung den Impuls 2 mal auslöst.
@@ -317,7 +317,7 @@ print(round(min(d_c_percent),4), round(d_c_percent[-1],4))
 
 **HINWEIS: Folgende Daten sind stark von der Dauer der von mir ausgedachten Pause abhängig und habe keine universelle Aussagekraft!**
 
-Während der Pause wird (der Betrag der) prozentualen Abweichung **kleiner. **
+Während der Pause wird (der Betrag der) prozentualen Abweichung **kleiner.**
 
 Beim Anfahren auf der Abfahrt steigt er auf **-0.5736% an, also mehr als 10 mal kleiner als auf der Hinfahrt.**
 
